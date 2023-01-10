@@ -5,7 +5,7 @@ class Node {
   }
 }
 
-class SinglyLinkedList {
+class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -28,55 +28,61 @@ class SinglyLinkedList {
 
   // Time complexity: O(1)
   prepend(value) {
-    const newNode = new Node(value);
-    newNode.next = this.head;
-    this.head = newNode;
+    const node = new Node(value);
+    node.next = this.head;
+    this.head = node;
     this.length++;
-    return this;
-  }
-
-  // Time complexity: O(n)
-  insertAt(index, value) {
-    // if index is 0 or less than zero prepend it
-    if (index <= 0) return this.prepend(value);
-    // if index is greater than the length or equal to length append it
-    if (index >= this.length) return this.append(value);
-
-    const leader = this.traverseToIndex(index - 1);
-    const holdingPointer = leader.next;
-    const newNode = new Node(value);
-    leader.next = newNode;
-    newNode.next = holdingPointer;
-    this.length++;
-    return this;
-  }
-
-  // Time complexity: O(n)
-  remove(index) {
-    const leader = this.traverseToIndex(index - 1);
-    const holdingPointer = this.traverseToIndex(index + 1);
-    leader.next = holdingPointer;
-    this.length--;
     return this;
   }
 
   traverseToIndex(index) {
-    let counter = 0;
     let currentNode = this.head;
-    while (counter !== index) {
-      currentNode = currentNode.next;
-      counter++;
+    let counter = 0;
+    let result = null;
+
+    while (currentNode !== null) {
+      if (counter === index) {
+        return (result = currentNode);
+      } else {
+        currentNode = currentNode.next;
+        counter++;
+      }
     }
-    return currentNode;
+
+    return result;
   }
 
-  printList() {
-    let array = [];
+  print() {
     let currentNode = this.head;
-    while (currentNode) {
+    let array = [];
+    while (currentNode !== null) {
       array.push(currentNode.value);
       currentNode = currentNode.next;
     }
     console.log(array);
   }
+
+  insert(index, value) {
+    if (index < 0) return this;
+    if (index === 0) return this.prepend(value);
+    if (this.length === index) return this.append(value);
+
+    const node = new Node(value);
+    const leader = this.traverseToIndex(index - 1);
+    node.next = leader.next;
+    leader.next = node;
+    this.length++;
+    return this;
+  }
+
+  delete(index) {
+    const leader = this.traverseToIndex(index - 1);
+    const nodeToDelete = this.traverseToIndex(index);
+    leader.next = nodeToDelete.next;
+    this.length--;
+    return this;
+  }
 }
+
+const myLinkedList = new LinkedList();
+myLinkedList.print();
