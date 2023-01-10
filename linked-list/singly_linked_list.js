@@ -86,6 +86,28 @@ class SinglyLinkedList {
     this.length--;
     return this;
   }
+
+  // Time complexity: O(n)
+  reverse() {
+    if (this.length === 1) {
+      return this.head;
+    }
+
+    let first = this.head;
+    let second = first.next;
+    this.tail = first;
+
+    while (second) {
+      let temp = second.next;
+      second.next = first;
+      first = second;
+      second = temp;
+    }
+
+    this.head.next = null;
+    this.head = first;
+    return this;
+  }
 }
 
 const mySinglyLinkedList = new SinglyLinkedList();
@@ -94,5 +116,5 @@ mySinglyLinkedList.append(20);
 mySinglyLinkedList.prepend(0);
 mySinglyLinkedList.insert(1, 5);
 mySinglyLinkedList.insert(3, 15);
-mySinglyLinkedList.delete(mySinglyLinkedList.length - 1);
+mySinglyLinkedList.reverse();
 mySinglyLinkedList.print();
