@@ -2,10 +2,11 @@ class Node {
   constructor(value) {
     this.value = value;
     this.next = null;
+    this.prev = null;
   }
 }
 
-class SinglyLinkedList {
+class DoublyLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -16,6 +17,7 @@ class SinglyLinkedList {
   append(value) {
     const newNode = new Node(value);
     if (this.head) {
+      newNode.prev = this.tail;
       this.tail.next = newNode;
       this.tail = newNode;
     } else {
@@ -30,6 +32,7 @@ class SinglyLinkedList {
   prepend(value) {
     const newNode = new Node(value);
     newNode.next = this.head;
+    this.head.prev = newNode;
     this.head = newNode;
     this.length++;
     return this;
@@ -73,7 +76,9 @@ class SinglyLinkedList {
     const newNode = new Node(value);
     const leader = this.traverseToIndex(index - 1);
     newNode.next = leader.next;
+    newNode.prev = leader;
     leader.next = newNode;
+    leader.next.prev = newNode;
     this.length++;
     return this;
   }
@@ -83,16 +88,17 @@ class SinglyLinkedList {
     const leader = this.traverseToIndex(index - 1);
     const nodeToDelete = this.traverseToIndex(index);
     leader.next = nodeToDelete.next;
+    nodeToDelete.prev = leader;
     this.length--;
     return this;
   }
 }
 
-const mySinglyLinkedList = new SinglyLinkedList();
-mySinglyLinkedList.append(10);
-mySinglyLinkedList.append(20);
-mySinglyLinkedList.prepend(0);
-mySinglyLinkedList.insert(1, 5);
-mySinglyLinkedList.insert(3, 15);
-mySinglyLinkedList.delete(mySinglyLinkedList.length - 1);
-mySinglyLinkedList.print();
+const myDoublyLinkedList = new DoublyLinkedList();
+myDoublyLinkedList.append(10);
+myDoublyLinkedList.append(20);
+myDoublyLinkedList.prepend(0);
+myDoublyLinkedList.insert(1, 5);
+myDoublyLinkedList.insert(3, 15);
+myDoublyLinkedList.delete(myDoublyLinkedList.length - 1);
+myDoublyLinkedList.print();
