@@ -1,6 +1,6 @@
 # Queue
 
-Queue follows the **First In First Out (FIFO)** rule - the item that goes in first is the item that comes out first.
+Queue follows the **First In First Out (FIFO)** rule - the item that goes in first is the item that comes out first. Example: Ticket counter queue.
 
 ![Linked list data structure](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/assets/queue.webp)
 
@@ -14,3 +14,7 @@ Queue follows the **First In First Out (FIFO)** rule - the item that goes in fir
 ## Applications of queue
 
 - CPU scheduling, Disk Scheduling
+
+## Queue implementation
+
+Queue can be implemented by using both **array** and **linked list**, but its not a good idea to implement it via array because arrays do shifting when element is removed from beginning or somewhere middle.
