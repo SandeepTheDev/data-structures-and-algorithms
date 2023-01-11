@@ -4,9 +4,9 @@ Linked list is also a **linear data structure**, unlike arrays the **elements ar
 
 ![Linked list data structure](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/assets/linked-list.webp)
 
-## Linked list operations and time complexity
+## Linked list operations
 
-- append O(1)
-- prepend O(1)
-- insert O(n)
-- delere O(n)
+- `append` O(1)
+- `prepend` O(1)
+- `insert` O(n)
+- `delete` O(n)

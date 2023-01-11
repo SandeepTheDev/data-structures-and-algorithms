@@ -6,12 +6,12 @@ Stack is a linear data structure that follows the principle of **LIFO (Last in F
 
 ## Stack operations
 
-- lookup O(n)
-- pop O(1)
-- push O(1)
-- peek O(1)
+- `lookup` O(n)
+- `pop` O(1)
+- `push` O(1)
+- `peek` O(1)
 
-## Application of stack data structure
+## Application of stack
 
 - Undo/Redo
 - Browser history
