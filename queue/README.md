@@ -18,3 +18,7 @@ Queue follows the **First In First Out (FIFO)** rule - the item that goes in fir
 ## Queue implementation
 
 Queue can be implemented by using both **array** and **linked list**, but its not a good idea to implement it via array because arrays do shifting when element is removed from beginning or somewhere middle.
+
+## Question
+
+- Implement queue using stacks
