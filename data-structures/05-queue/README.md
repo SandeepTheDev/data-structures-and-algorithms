@@ -6,10 +6,11 @@ Queue follows the **First In First Out (FIFO)** rule - the item that goes in fir
 
 ## Queue operations
 
-- `lookup` O(n)
-- `enqueue` O(1)
-- `dequeue` O(1)
-- `peek` O(1)
+| Operations | Time complexity |
+| ---------- | --------------- |
+| `enqueue`  | O(1)            |
+| `dequeue`  | O(1)            |
+| `peek`     | O(1)            |
 
 ## Applications of queue
 

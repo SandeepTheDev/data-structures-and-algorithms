@@ -6,7 +6,9 @@ Linked list is also a **linear data structure**, unlike arrays the **elements ar
 
 ## Linked list operations
 
-- `append` O(1)
-- `prepend` O(1)
-- `insert` O(n)
-- `delete` O(n)
+| Operations | Time complexity |
+| ---------- | --------------- |
+| `append`   | O(1)            |
+| `prepend`  | O(1)            |
+| `insert`   | O(n)            |
+| `delete`   | O(n)            |
