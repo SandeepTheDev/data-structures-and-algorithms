@@ -12,20 +12,16 @@ Algorithm is a set of steps a program takes to complete a task.
 
 ## Data Structures
 
-Data structures are used for storing and organizing data in computer memory so that it can be used efficiently. Data structures can be divided into two categories:
+Data structures are used for storing and organizing data in computer memory so that it can be used efficiently. Data structures can be **linear** and **non-linear**.
 
-#### Linear data structures
+### Common data structures
 
-In linear data structures, the elements are arranged in sequence one after the other. Some well known linear data structures are:
+1. [Arrays](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/01-array)
 
-- Array
-- Stack
-- Queue
-- Linked list
+2. [Hash Tables](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/02-hash-table)
 
-#### Non-linear data structures
+3. [Linked List](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/03-linked-list)
 
-In non-linear data structures, the elements are not arranged in sequence. Some well known non-linear data structures are:
+4. [Stacks](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/04-stack)
 
-- Graphs
-- Trees
+5. [Queues](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/05-queue)
