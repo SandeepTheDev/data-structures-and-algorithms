@@ -18,10 +18,8 @@ Data structures are used for storing and organizing data in computer memory so t
 
 1. [Arrays](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/01-array)
 
-2. [Hash Tables](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/02-hash-table)
+2. [Linked List](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/02-linked-list)
 
-3. [Linked List](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/03-linked-list)
+3. [Stacks](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/03-stack)
 
-4. [Stacks](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/04-stack)
-
-5. [Queues](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/05-queue)
+4. [Queues](https://github.com/isandeepbansal/data-structures-and-algorithms/tree/main/data-structures/04-queue)
