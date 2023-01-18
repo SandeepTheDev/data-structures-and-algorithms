@@ -2,7 +2,7 @@
 
 Computer science is all about problem solving.
 
-![Problem Solving](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/assets/problem-solving.png)
+![Problem Solving](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/assets/computer-science.svg)
 
 Understanding Data Structures & Algorithms is vital for writing efficient computer programs.
 
