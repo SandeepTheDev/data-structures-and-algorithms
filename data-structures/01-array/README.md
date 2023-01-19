@@ -18,3 +18,59 @@ Static arrays are fixed in size that means they required size of the array at th
 | `push`     | O(1)            |
 | `insert`   | O(n)            |
 | `delete`   | O(n)            |
+
+## Array Immplementation
+
+```js
+class MyArray {
+  constructor() {
+    this.data = {};
+    this.length = 0;
+  }
+
+  // Time complexity: O(1)
+  push(element) {
+    this.data[this.length] = element;
+    this.length++;
+    return this.length;
+  }
+
+  // Time complexity: O(1)
+  get(index) {
+    return this.data[index];
+  }
+
+  // Time complexity: O(1)
+  pop() {
+    if (this.length > 0) {
+      const element = this.data[this.length - 1];
+      delete this.data[this.length - 1];
+      this.length--;
+      return element;
+    } else {
+      return "Array is empty...";
+    }
+  }
+
+  // Time complexity: O(n)
+  delete(index) {
+    if (this.data[index]) {
+      const element = this.data[index];
+      for (let i = index; i < this.length; i++) {
+        this.data[i] = this.data[i + 1];
+      }
+      delete this.data[this.length - 1];
+      this.length--;
+      return element;
+    } else {
+      return "404 Not found 😭";
+    }
+  }
+}
+```
+
+## Exercise
+
+1. [Reverse string: create a function that reverses a string](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/data-structures/01-array/exercise/reverse_string.js)
+
+2. [Merge sorted array: write a function that merge two sorted array of integers](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/data-structures/01-array/exercise/merge_sorted_array.js)
