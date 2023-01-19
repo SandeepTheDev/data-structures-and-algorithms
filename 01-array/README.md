@@ -19,7 +19,7 @@ Static arrays are fixed in size that means they required size of the array at th
 | `insert`   | O(n)            |
 | `delete`   | O(n)            |
 
-## Array Immplementation
+## Array Implementation
 
 ```js
 class MyArray {
@@ -68,9 +68,3 @@ class MyArray {
   }
 }
 ```
-
-## Exercise
-
-1. [Reverse string: create a function that reverses a string](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/data-structures/01-array/exercise/reverse_string.js)
-
-2. [Merge sorted array: write a function that merge two sorted array of integers](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/data-structures/01-array/exercise/merge_sorted_array.js)
