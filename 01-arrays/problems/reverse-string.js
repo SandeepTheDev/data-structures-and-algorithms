@@ -4,17 +4,13 @@
  * Output: !dlroW olleH
  */
 
-function reverseStr(str) {
-  if (typeof str === "string" && str.length > 0) {
-    const splittedStr = str.split("");
-    const reverse = [];
-    for (let i = splittedStr.length - 1; i >= 0; i--) {
-      reverse.push(splittedStr[i]);
-    }
-    return reverse.join("");
-  } else {
-    return "Please pass a valid string...";
+function reverseStr(string) {
+  let str = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+    str = str + string[i];
   }
+
+  return str;
 }
 
 const result = reverseStr("Hello World!");

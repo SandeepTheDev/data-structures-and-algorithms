@@ -4,23 +4,20 @@
  * Output: [1, 4, 5, 7, 8]
  */
 
-function sort(arr) {
-  if (Array.isArray(arr) && arr.length > 0) {
-    for (let i = 0; i < arr.length; i++) {
-      for (let j = 0; j < arr.length; j++) {
-        let current = arr[j];
-        for (let k = i; k < arr.length; k++) {
-          if (current > arr[k]) {
-            let temp = arr[k];
-            arr[j] = temp;
-            arr[k] = current;
-            break;
-          }
-        }
+function bubbleSort(numbers) {
+  let count = 0;
+  while (count < numbers.length - 1) {
+    for (let i = 0; i < numbers.length - count - 1; i++) {
+      if (numbers[i] > numbers[i + 1]) {
+        let temp = numbers[i];
+        numbers[i] = numbers[i + 1];
+        numbers[i + 1] = temp;
       }
     }
+    count++;
   }
-  return arr;
+
+  return numbers;
 }
 
-console.log(sort([7, 5, 8, 4, 1]));
+console.log(bubbleSort([7, 5, 8, 4, 1]));
