@@ -24,9 +24,9 @@ Static arrays are fixed in size that means they required size of the array at th
 
 | Operations                | Time complexity |
 | ------------------------- | --------------- |
+| `search`                  | O(n)            |
 | `lookup`                  | O(1)            |
 | `push`                    | O(1)            |
-| `pop`                     | O(1)            |
 | `insert` (shift, unshift) | O(n)            |
 | `delete`                  | O(n)            |
 
@@ -48,4 +48,4 @@ Hash table is a data structure that consists a **key** - **value** pair. **Hash 
 
 ### Hash table collision
 
-Sometimes collision occurs when hash function generates the same hash for more than one key. When collision occurs accessing a key can be O(n).
+Hash tables are initialized with some size and sometimes collision occurs when hash function generates the same hash (memory address) for more than one key. When collision occurs accessing a key can be O(n).
