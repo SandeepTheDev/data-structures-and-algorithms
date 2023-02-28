@@ -4,31 +4,33 @@
  * Output: [4, 5, 7, 8, 8, 9, 10, 12]
  */
 
-function mergeSortedArray(arr1, arr2) {
-  if (arr1.length === 0) {
-    return arr2;
-  }
-
-  if (arr2.length === 0) {
-    return arr1;
-  }
-
+function mergeSortedArray(array1, array2) {
   const mergedArray = [];
-  let arr1Item = arr1[0];
-  let arr2Item = arr2[0];
-  let i = 1;
-  let j = 1;
+  let array1Idx = 0;
+  let array2Idx = 0;
 
-  while (arr1Item || arr2Item) {
-    console.log(arr1Item, "<", arr2Item, arr1Item < arr2Item);
-    if (!arr2Item || arr1Item < arr2Item) {
-      mergedArray.push(arr1Item);
-      arr1Item = arr1[i];
-      i++;
+  while (array1[array1Idx] || array2[array2Idx]) {
+    const array1Item = array1[array1Idx];
+    const array2Item = array2[array2Idx];
+
+    if (array1Item && array2Item) {
+      if (array1Item < array2Item) {
+        mergedArray.push(array1Item);
+        array1Idx++;
+      } else {
+        mergedArray.push(array2Item);
+        array2Idx++;
+      }
     } else {
-      mergedArray.push(arr2Item);
-      arr2Item = arr2[j];
-      j++;
+      if (array1Item) {
+        mergedArray.push(array1Item);
+        array1Idx++;
+      }
+
+      if (array2Item) {
+        mergedArray.push(array2Item);
+        array2Idx++;
+      }
     }
   }
 

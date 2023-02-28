@@ -18,3 +18,9 @@ Static arrays are fixed in size that means they required size of the array at th
 | `push`     | O(1)            |
 | `insert`   | O(n)            |
 | `delete`   | O(n)            |
+
+## Array problems
+
+1. [Reverse string: create a function that reverses a string](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/data-structures/01-array/exercise/reverse_string.js)
+
+2. [Merge sorted array: write a function that merge two sorted array of integers](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/data-structures/01-array/exercise/merge_sorted_array.js)
