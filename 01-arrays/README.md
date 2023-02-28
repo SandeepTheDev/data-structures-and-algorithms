@@ -2,7 +2,7 @@
 
 Array is a collection of values (elements) stored in a contiguous memory locations.
 
-![Array data structure](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/assets/array.svg)
+![Array data structure](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/assets/array.svg)
 
 ## Static vs Dynamic Arrays
 

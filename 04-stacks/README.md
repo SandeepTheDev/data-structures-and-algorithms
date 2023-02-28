@@ -2,7 +2,7 @@
 
 Stack is a linear data structure that follows the principle of **LIFO (Last in First Out)**. This means the last element inserted inside the stack is removed first. Example: browser history.
 
-![Stack data structure](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/assets/stack.webp)
+![Stack data structure](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/assets/stack.webp)
 _[Image source](https://cdn.programiz.com/sites/tutorial2program/files/stack.png)_
 
 ## Stack operations

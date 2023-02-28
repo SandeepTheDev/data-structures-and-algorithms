@@ -2,7 +2,7 @@
 
 Queue follows the **First In First Out (FIFO)** rule - the item that goes in first is the item that comes out first. Example: Ticket counter queue.
 
-![Linked list data structure](https://github.com/isandeepbansal/data-structures-and-algorithms/blob/main/assets/queue.webp)
+![Linked list data structure](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/assets/queue.webp)
 _[Image source](https://cdn.programiz.com/sites/tutorial2program/files/queue.png)_
 
 ## Queue operations
