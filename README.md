@@ -6,27 +6,21 @@ Computer science is all about problem solving.
 
 Understanding Data Structures & Algorithms is vital for writing efficient computer programs.
 
-## Algorithm
+**Algorithm is a set of steps a program takes to complete a task**. and **Data structures are used for storing and organizing data in computer memory so that it can be used efficiently**. Data structures can be **linear** and **non-linear**.
 
-Algorithm is a set of steps a program takes to complete a task.
-
-## Data Structures
-
-Data structures are used for storing and organizing data in computer memory so that it can be used efficiently. Data structures can be **linear** and **non-linear**.
-
-### Arrays
+## Array Data structure
 
 Array is a collection of values (elements) stored in a contiguous memory locations.
 
 ![Array data structure](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/assets/array-1.svg)
 
-## Static vs Dynamic Arrays
+### Static vs Dynamic Arrays
 
 Static arrays are fixed in size that means they required size of the array at the time creation. Dynamic arrays are not fixed in size they are flexible and the size of the array can be changed.
 
 👉 In JavaScript Arrays are dynamic.
 
-## Array operations
+### Array operations
 
 | Operations                | Time complexity |
 | ------------------------- | --------------- |
@@ -36,7 +30,7 @@ Static arrays are fixed in size that means they required size of the array at th
 | `insert` (shift, unshift) | O(n)            |
 | `delete`                  | O(n)            |
 
-## Array problems
+### Array problems
 
 1. [Reverse string: create a function that reverses a string](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/data-structures/01-array/exercise/reverse_string.js)
 
