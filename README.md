@@ -38,6 +38,10 @@ Static arrays are fixed in size that means they required size of the array at th
 
 ## 2. Hash table Data structure
 
-Hash table is a data structure that consists a **key** - **value** pair. **Hash function** is a function that generate a **hash value** or **hash** for a **key** to store and retrieve the corresponding data (value). Hash function takes a **key** as input and generates a memory location where data is stored. Unlike array hash table elements are not stored in contiguous memory location.
+Hash table is a data structure that consists a **key** - **value** pair. **Hash function** is a function that generate a **hash value** or **hash** for a **key** to store and retrieve the corresponding data (value). Hash function takes a **key** as input and generates a memory location where data is stored. **Unlike array hash table's elements are not stored in contiguous memory location**.
 
-![Problem Solving](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/assets/hash-table.svg)
+![Hash table data structure](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/assets/hash-table.svg)
+
+- In Javascript object keys are always string.
+
+- Javascript's **Map** allows any data type as a key.
