@@ -49,3 +49,18 @@ Hash table is a data structure that consists a **key** - **value** pair. **Hash 
 ### Hash table collision
 
 Hash tables are initialized with some size and sometimes collision occurs when hash function generates the same hash (memory address) for more than one key. When collision occurs accessing a key can be O(n).
+
+## 3. Linked list Data structure
+
+Linked list is a **linear data structure**, unlike arrays the **elements are not stored in contiguous memory locations**. Linked list consist of **nodes**, and each node has a **value** and **reference** to next node or null.
+
+![Linked list data structure](https://github.com/SandeepTheDev/data-structures-and-algorithms/blob/main/assets/linked-list.svg)
+
+### Linked list operations
+
+| Operations | Time complexity |
+| ---------- | --------------- |
+| `append`   | O(1)            |
+| `prepend`  | O(1)            |
+| `insert`   | O(n)            |
+| `delete`   | O(n)            |
