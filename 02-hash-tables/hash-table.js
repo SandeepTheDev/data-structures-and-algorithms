@@ -13,19 +13,31 @@ class HashTable {
   }
 
   set(key, value) {
-    const hash = this._hash(key);
-    this.data[hash] = value;
+    const address = this._hash(key);
+    // is `this.data[address]` has value?
+    // if not create an array for handling future collision
+    if (!this.data[address]) {
+      this.data[address] = [];
+    }
+    this.data[address].push([key, value]);
+    return this.data;
   }
 
   get(key) {
-    const hash = this._hash(key);
-    return this.data[hash];
+    const address = this._hash(key);
+    const currentBucket = this.data[address];
+    if (currentBucket) {
+      for (let i = 0; i < currentBucket.length; i++) {
+        if (currentBucket[i][0] == key) {
+          return currentBucket[i];
+        }
+      }
+    }
+    return undefined;
   }
 }
 
-const hashTable = new HashTable(50);
+const hashTable = new HashTable(1);
 hashTable.set("black", "#000000");
 hashTable.set("white", "#ffffff");
-const black = hashTable.get("black");
-const white = hashTable.get("white");
-console.log(black, white);
+console.log(hashTable.get("white"));

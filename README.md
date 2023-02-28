@@ -45,3 +45,7 @@ Hash table is a data structure that consists a **key** - **value** pair. **Hash 
 - In Javascript object keys are always string.
 
 - Javascript's **Map** allows any data type as a key.
+
+### Hash table collision
+
+Sometimes collision occurs when hash function generates the same hash for more than one key. When collision occurs accessing a key can be O(n).
