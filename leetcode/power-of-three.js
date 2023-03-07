@@ -13,4 +13,5 @@ function powerOfThree(n) {
   return n === 1;
 }
 
-console.log(powerOfThree(21));
+var result = powerOfThree(21);
+console.log(result);

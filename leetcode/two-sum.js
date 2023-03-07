@@ -15,7 +15,7 @@
  */
 
 function twoSums(numbers, target) {
-  const obj = {};
+  var obj = {};
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] in obj) {
       return [obj[numbers[i]], i];
@@ -24,5 +24,5 @@ function twoSums(numbers, target) {
   }
 }
 
-const result = twoSums([3, 2, 4], 6);
+var result = twoSums([3, 2, 4], 6);
 console.log(result);
